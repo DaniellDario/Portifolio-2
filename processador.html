@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processador</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="shortcut icon" href="Style/banco_de_imagens/icone.png" type="image/x-icon">
+</head>
+<body>
+    <div class="corpo">
+
+        <h2><a href="index.html"><img class="back" src="Style/banco_de_imagens/back-button.png" alt="voltar"></a> Processador</h2>
+        <p>Podemos classificar em diversos topicos;</p>
+        <ul>
+            <li>Litografia</li>
+            <li>Clock</li>
+            <li>Gerações</li>
+            <li>Núcleos</li>
+            <li>Threads</li>
+            <li>Hyperthreading / Simultaneous Multi-Threading</li>
+            <li>Arquitetura</li>
+            <li>x86 e x64</li>
+            <li>Graficos Integrados</li>
+            <li>Memoria Cache</li>
+            <li>TDP</li>
+            <li>Undervolt</li>
+            <li>Overclock</li>
+        </ul>
+
+        <h3>Litografia</h3>
+        <p>Vejamos que conforme evoluimos na tecnologia novas possibilidades vem surgindo. Tendo em mente isso, a litografia é o ponto principal para evoluir sem aumentar o tamanho do processador. De maneira pratica a litografia é a dimensao dos transistores que estao dentro do processador. <br>
+        Quanto menor o valor menor é o gasto energetico e consequentemente mais poderoso. É medido em Nm (Nanômetro)</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/i3-10100.webp" alt="i3-10100"></div>
+        <p class="sub">Imagem: Intel Core i3-10100</p>
+
+        <h3>Clock</h3>
+        <p>A velocidade dos ciclos de processamento dentro do processador em conjunto das demais peças. A velocidade de clock não quer dizer que se um processador opera em 5 GHz, ele necessariamente não precisa ser mais rapido do que um de 4.5 GHz. Tudo vai depender da potência por núcleo e da arquitetura implantada no processador.</p>
+        <p>A velocidade de clock é o tempo que leva para o ciclo de processamento terminar. Em geral, o tempo de clock é o tempo médio de um ciclo de processamento
+        <div class="imagem"><img src="Style/banco_de_imagens/i913900K8GHZ.jpg" alt="i9-13900K"></div>
+        <p class="sub">Imagem: Core i9-13900K @ 8GHz Recorde Mundial.</p>
+
+        <h3>Gerações</h3>
+        <p>Todo ano a intel lança uma geração nova de seus processadores e com isso, muitas pessoas ficam em dúvida quando chegam no local de compra e não sabem qual e o melhor processador que desempenha melhor para o uso que ela deseja. Tudo irá depender da geração. Conforme um processador avança de geraçao ele vai ficando mais eficiente e com mais performance por Watt, Muitas vezes ainda ganham mais nucleos e mais threads entregando mais performance em geral. Uma duvida muito recorrente que eu posso sanar. Um i5-7400 é mais lento que um i3-12100 e eu posso provar. Veja a imagem abaixo.</p>
+
+        <div class="imagem"><img src="Style/banco_de_imagens/benchmark.png" alt="i5-7400-vs-i3-12100"></div>
+        <p class="sub">Imagem: Core i5-7400 vs i3-12100</p>
+        <p>Note que em nenhuma parte dos testes feito nos dois processadores o i5 não ganhou em nenhum bloco. Uma boa explicação para isso se da ao fato de que quando um processador fica por muito tempo com a mesma quantidade de nucleo ele acaba ficando defasado desde o momento da compra, para não acontecer isso e atingir o publico alvo a empresa acaba optando por adicionar alguns nucleos a mais para evitar esse tipo de problema.</p>
+        <p>Por isso que um i3 de 7° geração possui 2 núcleos fisicos, enquanto o mesmo produto de uma geração acima (8° geração) possui 4 núcleos fisicos.</p>
+
+        <h3>Núcleos</h3>
+        <p>Podemos dizer que são os trabalhadores de um processador, onde se um processador tem 4 núcleos ele consegue fazer 4 tarefas ao mesmo tempo teoricamente, a mesma coisa com um processador de 2,6,8,12 núcleos.</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/intel_die.png" alt="die-intel"></div>
+        <p class="sub">Imagem: Processador Intel com 8 núcleos</p>
+
+        <h3>Threads</h3>
+        <p>Traduzindo significa linha de execução, que podemos ligar os pontos e falar que é uma linha de execução de processos que um processador, ou seja, podemos dizer que uma tarefa pode ser "fragmentada" em varios pedaços para o processador ter um melhor desempenho fazendo o mais importante primeiro.</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/thread.jpg" alt="explicação-de-threads"></div>
+        <p class="sub">Imagem: Como funcionam as threads</p>
+
+        <h3>Hyperthreading / Simultaneous Multi-Threading</h3>
+        <p>O Hyperthreading é o nome dado pela Intel para seus processadores. Já a AMD não tem um nome mas entendemos que é um Simultaneous Multi-Threading que tem a mesma funcionalidade basicamente do Hyperthreading (nome dado pela Intel).</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/taskmanager.png" alt="gerenciador-de-tarefas"></div>
+        <p class="sub">Imagem: Informações do processador utilizado para fazer esse site</p>
+
+        <h3>Arquitetura</h3>
+        <p>Irá nos mostrar o potencial que um processador pode ter apenas modificando as "peças" de dentro. So com melhoria de arquitetura já e possivel ver um salto em performance e em eficiencia energetica, sem contar com o aumento em potencial do Clock. Vejamos abaixo diversas modificações que deixam um único ciclo muito mais eficiente e com funções bem mais divididas.</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/arquitetura-do-ryzen.jpg" alt="arquitetura-ryzen"></div>
+        <p class="sub">Imagem: Arquitetura do AMD Ryzen</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/layout-zen2-vs-zen3.jpg" alt=""></div>
+        <p class="sub">Imagem: Comparação dos Layouts da geração ZEN 2 e ZEN 3</p>
+
+        <h3>x86 e x64</h3>
+        <p>x86 (32 bits) x64 (64bits) basicamente. Um processador 32 bits só aceita sistemas operacionais que sejam 32 bits ou x86, diferentemente de processadores 64 bits que aceitam ambos. Atualmente ainda não se vê nem processadores nem sistemas operacionais (SO) 128 bits.<br> 
+        Os 32 bits tem uma limitação lógica, onde só podem aceitar 4 GB de memória RAM, vejamos os calculos. <br><br>
+        2<sup>32</sup>= 4,294,967,296 = 4 Gb<br><br>
+        Enquanto um de 64 bits; <br><br> 
+        2<sup>64</sup>= 18,446,744,073,709,551,616 ≅ 2306 Pb (Petabyte), ninguém conseguiu bater o limite fisico de memória.</p>
+        <p>Os Sistemas operacionais não estão preparados para gerenciar grandes armazenamentos de memorias e muito menos os processadores, visto que apenas os processadores de servidores podem suportar uma quantidade ainda limitada fisicamente. Atualmente o processador que suporta no maximo 6 TB é o Xeon-5318Y (Intel), existe um que não especifica muito bem mas no lado da AMD tem um bem parelho ao Xeon que é o AMD Ryzen Threadripper PRO 5995WX.</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/32bits-vs-64bits.jpg" alt="comparação-dos-bits"></div>
+        <p class="sub">Imagem: Comparação de um windows 32 bits vs 64 bits.</p>
+
+        <h3>Graficos Integrados</h3>
+        <p>É a "placa de video" integrada ao processador que é muito viavel para as pessoas que não tem placa de video (também chamada de Integrated Graphics). Na maioria das vezes servem apenas para dar video e executar tarefas simples como executar um video ou um jogo como League of Legends ou Counter Strike (famoso CS) que exigem muito pouco da placa de video integrada. Alguns dos processadores podem conter graficos integrados, os que não tem graficos integrados geralmente são muito bem especificados como o F no final dos processadores Intel, Ou quando não tem o final G como é o caso da AMD.</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/i5.png" alt="i5-12400F"></div>
+        <p class="sub">Imagem: Core i5-12400F</p>
+        <h3>Memoria Cache</h3>
+        <p>É uma memoria interna do processador, que são armazenadas coisas mais importantes, e são extremamentes mais eficazes em relação a memoria ram, pelo simples motivo de estar localizado no die do processador onde tudo é processado. Podemos dividir em 3 partes.</p>
+        <h3>Cache L1</h3>
+        <p>Uma memoria "espremida" no processador para dar um boost no processamento sem precisar de puxar informação da memoria RAM. Está localizada mais proxima do chipset, com espaço reduzido e com velocidades exorbitantes que chegam a ser até 100x mais rapida que uma memoria ram.</p>
+        <h3>Cache L2</h3>
+        <p>Uma parte maior porem mais distante do chipset com velocidade um pouco mais reduzida porem ainda rapida o suficiente.</p>
+        <h3>Cache L3</h3>
+        <p>A maior memoria do processador (em armazenamento) porém, muito distante do chipset e consequentemente é lenta em relação as L1 e L2. Atua como uma memória auxiliar do processador. Não descumprindo a função de armazenar informações para um rapido processamento. Se não encontrar nada nessas 3 memorias listadas acima o processador parte para a memoria RAM procurar o que precisa.</p>
+        <h3>TDP</h3>
+        <p>Thermal Design Power. Muitas pessoas falam que é o quanto que o processador vai gastar de energia , mas não é bem assim, se um processador vem dizendo q o TDP é de 65 W não significa que ele vai consumir 65 Watt, na maioria das vezes ele irá consumir bem menos ou em alguns casos consumir muito mais. Em resumo o TDP é o consumo medio. Com as informações passadas acima com o número do TDP passado pelo fabricante é possivel saber se é preciso ter um sistema de arrefecimento melhor para garantir que a peça não irá superaquecer.</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/pcpegandofogo.webp" alt="notebook-pelando"></div>
+        <p class="sub">Imagem: Notebook Pegando Fogo</p>
+        <p>A maioria dos notebooks tem um TDP muito baixo, o TDP muito baixo quer dizer que o notebook vai consumir muito menos energia e consequentemente esquentar menos.</p>
+        <h3>Undervolt</h3>
+        <p>Muitas pessoas fazem o procedimento de undervolt para acabar de vez com o aquecimento do processador e algumas pessoas fazem com a placa de video também, diminuindo a quantidade de volts que o processador irá receber, mas não necessariamente irá precisar abaixar o clock apesar de ser variavel por padrão. Após fazer este procedimento a primeira mudança que é facil de perceber são os coolers que estarão operando com menos barulho. Podemos tambem combinar com o TDP mais baixo (alguns computadores dá pra modificar), um aplicativo que eu ja utilizei foi o ThrottleStop que te dá a possibilidade de tirar o limite ou limitar tanto o TDP quanto fazer undervolt</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/throttlestop.png" alt="undervolting"></div>
+        <p class="sub">Imagem: ThrottleStop</p>
+        <h3>Overclock</h3>
+        <p>Onde o filho chora e a mãe não vê, deixando bem claro, no overclock você está suscetível a varios riscos, pois é no overclock que tem a chance de subir demasiadamente a temperatura do processador, não fazendo queimar na hora do overclock mas matando-o a longo prazo, quanto mais baixa a temperatura melhor para o processador, então, antes de fazer qualquer overclock tenha em mente que você terá que dar um "tapinha" no cooler, seja aumentando a velocidade ou comprando um melhor.</p>
+        <div class="imagem"><img src="Style/banco_de_imagens/overclock.webp" alt="overclocking"></div>
+        <p class="sub">Imagem: Resfriando processador com nitrogênio liquido.</p>
+
+        <p class="indexbutton"><a href="index.html"><img class="back" src="Style/banco_de_imagens/back-button.png" alt="voltar"></a> Voltar ao Inicio</p>
+    </div>
+</body>
+</html>
